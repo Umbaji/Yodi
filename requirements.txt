@@ -1,0 +1,7 @@
+os==builtin
+pathlib==builtin
+matplotlib==3.4.3
+numpy==1.21.2
+seaborn==0.11.2
+tensorflow==2.6.0
+IPython==7.28.0
