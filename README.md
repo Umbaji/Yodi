@@ -44,7 +44,6 @@ You can also use it to train our model via the umni_speech dataset avaible on ou
 ```python
 
 from pathlib import Path
-import gradio as gr
 
 if __name__ =="__main__":
     
@@ -54,7 +53,7 @@ data_dir = pathlib.Path(DATASET_PATH)
 if not data_dir.exists():
         print("Dowload the test_set folder from the repo: https://github.com/Umbaji/Yodi.git")
         pass
-        
+file = "audio_file_location.wav"
 yodi_instance = Yodi(file,version = "1", local = True,plot_specs = "True")
 yodi_instance.predict_from_path()
 ```
