@@ -32,20 +32,29 @@ After initializing a Yodi object, call the predict_from_path() method to get the
 You can also use it to train our model via the umni_speech dataset avaible on our github page :https://github.com/Umbaji/umni_speech
 
 Example
-Python
 
 from pathlib import Path
+import gradio as gr
 
 if __name__ =="__main__":
     
 DATASET_PATH = '~/umini_speech/test_set/'
 data_dir = pathlib.Path(DATASET_PATH)
 
-file = data_dir/'down/test_file.wav'
-yodi_instance = Yodi(file, version="1", local=True, plot_specs=False)
+if not data_dir.exists():
+        print("Dowload the test_set folder from the repo: https://github.com/Umbaji/Yodi.git")
+        pass
+        
+yodi_instance = Yodi(file,version = "1", local = True,plot_specs = "True")
 yodi_instance.predict_from_path()
 
+iface = gr.Interface(fn=yodi_instance.predict_from_path(), inputs=gr.inputs.Audio(source="microphone"), outputs="text")
+iface.launch()
+
+If Yodi misses the prediction on your input that means that it has not enough data !!!
 
 Contribute to leverage afircan language model by adding your input audio to our umini_speech dataset here :
+https://github.com/Umbaji/umni_speech
+
 License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
