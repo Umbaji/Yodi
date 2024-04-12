@@ -49,9 +49,7 @@ if not data_dir.exists():
         
 yodi_instance = Yodi(file,version = "1", local = True,plot_specs = "True")
 yodi_instance.predict_from_path()
-
-iface = gr.Interface(fn=yodi_instance.predict_from_path(), inputs=gr.inputs.Audio(source="microphone"), outputs="text")
-iface.launch()
+```
 
 If Yodi misses the prediction on your input that means that it has not enough data !!!
 
