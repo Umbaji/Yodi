@@ -32,7 +32,7 @@ After initializing a Yodi object, call the predict_from_path() method to get the
 You can also use it to train our model via the umni_speech dataset avaible on our github page :https://github.com/Umbaji/umni_speech
 
 Example
-
+Python
 from pathlib import Path
 import gradio as gr
 
