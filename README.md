@@ -45,7 +45,6 @@ You can also use it to train our model via the umni_speech dataset avaible on ou
 ## Example
 ```python
 from pathlib import Path
-import gradio as gr
 
 if __name__ =="__main__":
     
