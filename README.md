@@ -2,21 +2,27 @@
 This is the official repository for YodiV1, the speech recognition model for 10 words, in Ewè.  The Yodi package is also useful for rapid inference on speech data, especially on the mini_speech datasets.
 
 
-Yodi, Your Speech Recognition Model
+# Yodi, Your Speech Recognition Model
 Welcome to the Yodi Audio AI Model! This model is designed to perform inference on audio files, providing a prediction of the audio command.
 
-Requirements
+# Requirements
 This project requires Python 3.6 or later.
 To install all the necessary packages run:
+Bash
 pip install -r requirements.txt
 
-Project Contents
+# Project Contents
 This project contains the following files:
 yodi.py: The main Python script where the model is defined and used for prediction.
-How to Run
-Clone the repo: git clone https://github.com/Umbaji/Yodi.git
+
+# How to Run
+Clone the repo: 
+Bash
+git clone https://github.com/Umbaji/Yodi.git
 Navigate to the cloned directory.
-Run the script in the terminal: python yodi.py
+Run the script in the terminal: 
+Bash
+python yodi.py
 
 Usage
 First, make sure you load your audio into the appropriate test folder.
