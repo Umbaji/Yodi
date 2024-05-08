@@ -12,7 +12,7 @@ This project requires Python 3.6 or later. To install all the necessary packages
 
 ```bash
 pip install -r requirements.txt
-
+```
 
 ## Project Contents
 This project contains the following files:
@@ -22,12 +22,13 @@ yodi.py: The main Python script where the model is defined and used for predicti
 Clone the repo (if installing via git): 
 ```bash
 git clone https://github.com/Umbaji/Yodi.git
+```
 Navigate to the cloned directory.
 
 Run the script in the terminal: 
 ```bash
 python yodi.py
-
+```
 ## Usage
 First, make sure you load your audio into the appropriate test folder.
 
@@ -57,7 +58,7 @@ if not data_dir.exists():
         
 yodi_instance = Yodi(file,version = "1", local = True,plot_specs = "True")
 yodi_instance.predict_from_path()
-
+```
 If Yodi misses the prediction on your input that means that it has not enough data !!!
 
 Contribute to leverage afircan language model by adding your input audio to our umini_speech dataset here :
