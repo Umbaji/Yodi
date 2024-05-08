@@ -7,8 +7,8 @@ Welcome to the Yodi Audio AI Model! This model is designed to perform inference 
 
 # Requirements
 This project requires Python 3.6 or later.
-To install all the necessary packages run:
-Bash
+To install all the necessary packages run (or install at compilation time):
+bash
 pip install -r requirements.txt
 
 # Project Contents
@@ -16,15 +16,16 @@ This project contains the following files:
 yodi.py: The main Python script where the model is defined and used for prediction.
 
 # How to Run
-Clone the repo: 
-Bash
+Clone the repo (if installing via git): 
+bash
 git clone https://github.com/Umbaji/Yodi.git
 Navigate to the cloned directory.
+
 Run the script in the terminal: 
-Bash
+bash
 python yodi.py
 
-Usage
+# Usage
 First, make sure you load your audio into the appropriate test folder.
 
 The Yodi class in yodi.py is initialized with the following parameters:
