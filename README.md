@@ -4,7 +4,7 @@ This is the official repository for YodiV1, the speech recognition model for 10 
 
 ## Yodi, Your Speech Recognition Model
 
-Welcome to the Yodi Audio AI Model! This model is designed to perform inference on audio files, providing a prediction of the audio command. Visit our Hugging Face page or contact contact@umbaji.org to access your model now !
+Welcome to the Yodi Model! This model is designed to perform inference on audio files, providing a prediction of the audio command. Visit our Hugging Face page or contact contact@umbaji.org to access your model now !
 
 ## Requirements
 
@@ -58,7 +58,7 @@ if not data_dir.exists():
 yodi_instance = Yodi(file,version = "1", local = True,plot_specs = "True")
 yodi_instance.predict_from_path()
 ```
-If Yodi misses the prediction on your input that means that it has not enough data !!!
+If Yodi misses the prediction on your input that means that it has not enough data !
 
 Contribute to leverage afircan language model by adding your input audio to our umini_speech dataset here :
 https://github.com/Umbaji/umni_speech
