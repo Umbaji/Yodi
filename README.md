@@ -42,13 +42,12 @@ After initializing a Yodi object, call the predict_from_path() method to get the
 
 You can also use it to train our model via the umni_speech dataset avaible on our github page :https://github.com/Umbaji/umni_speech
 
-<<<<<<< HEAD
+
 Example
 python
 =======
 ## Example
 ```python
->>>>>>> 214b3e57a796c3cb39dcf81a8cadf6a3c83970cb
 from pathlib import Path
 
 if __name__ =="__main__":
@@ -62,13 +61,11 @@ if not data_dir.exists():
         
 yodi_instance = Yodi(file,version = "1", local = True,plot_specs = "True")
 yodi_instance.predict_from_path()
-<<<<<<< HEAD
 
 If Yodi misses the prediction on your input that means that it has not enough data !!!
-=======
 ```
+=======
 If Yodi misses the prediction on your input that means that it has not enough data !
->>>>>>> 214b3e57a796c3cb39dcf81a8cadf6a3c83970cb
 
 Contribute to leverage afircan language model by adding your input audio to our umini_speech dataset here :
 https://github.com/Umbaji/umni_speech
