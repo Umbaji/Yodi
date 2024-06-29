@@ -72,12 +72,36 @@ class Yodi():
     waveform = self._decode_audio()
     return waveform, label
 
-  def _load_(self, local = True, URL =""):
-    if local == True: 
-    	model_path = DATASET_PATH + 'model/YodiV1.h5'
-        model = load_model(model_path)
-    else :
-        model = get(URL)
+  def _load_(local=True, URL=""):
+    if local:
+        try:
+            model = load_model('YodiV1.2-4.keras')
+        except FileNotFoundError:
+            print("Error: 'YodiV1.2-4.keras' not found. Trying to load from JSON.")
+            try:
+                json_file = open('YodiV1.2-4.json', 'r')
+                loaded_model_json = json_file.read()
+                json_file.close()
+                model = model_from_json(loaded_model_json)
+                model.load_weights("YodiV1.2-4_weights.h5")
+            except FileNotFoundError:
+                print("Error: 'YodiV1.2-4.json' or 'YodiV1.2-4_weights.h5' not found.")
+                try:
+                    # Fallback to a default model or raise an exception
+                    model =  load_model('YodiV1.2-4.h5')
+                except:
+                    print("Error: Could not load any model.")
+                    return None
+            except OSError as e:
+                print(f"Error loading model from JSON: {e}")
+                return None
+        except OSError as e:
+            print(f"Error loading model from .keras: {e}")
+            return None
+    else:
+        # Handle loading from URL
+        pass  # Implement URL loading logic here
+
     return model
 
   def predict_from_path(self):
