@@ -62,9 +62,8 @@ if not data_dir.exists():
 yodi_instance = Yodi(file,version = "1", local = True,plot_specs = "True")
 yodi_instance.predict_from_path()
 
-If Yodi misses the prediction on your input that means that it has not enough data !!!
 ```
-=======
+
 If Yodi misses the prediction on your input that means that it has not enough data !
 
 Contribute to leverage afircan language model by adding your input audio to our umini_speech dataset here :
