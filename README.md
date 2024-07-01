@@ -44,8 +44,7 @@ You can also use it to train our model via the umni_speech dataset avaible on ou
 
 
 Example
-python
-=======
+
 ## Example
 ```python
 from pathlib import Path
