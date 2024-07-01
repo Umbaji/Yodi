@@ -27,7 +27,7 @@ Navigate to the cloned directory.
 
 Run the script in the terminal: 
 ```bash
-python yodi.py
+python Yodi.py
 ```
 ## Usage
 First, make sure you load your audio into the appropriate test folder.
