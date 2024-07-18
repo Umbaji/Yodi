@@ -4,7 +4,7 @@ This is the official repository for YodiV1, the speech recognition model for 10 
 
 ## Yodi, Your Speech Recognition Model
 
-Welcome to the Yodi Model! This model is designed to perform inference on audio files, providing a prediction of the audio command. Visit our Hugging Face page or contact contact@umbaji.org to access your model now !
+Welcome to the Yodi Model! This model is designed to perform inference on audio files, providing a prediction of the audio command. Visit our Hugging Face page or contact contact@umbaji.org to access your model now ! (Official release in September 2024)
 
 ## Requirements
 
