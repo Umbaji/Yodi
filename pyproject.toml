@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Yodi"
+version = "1.0.0"
+description = "Yodi: Ewe to English and French translation application"
+dependencies = [
+    "pathlib",
+    "tensorflow"
+    "matplotlib==3.4.3",
+    "numpy==1.21.2",
+    "seaborn==0.11.2",
+    "IPython==7.28.0",
+    "gradio==4.26.0"
+]
