@@ -8,7 +8,7 @@ version = "1.0.0"
 description = "Yodi: Ewe to English and French translation application"
 dependencies = [
     "pathlib",
-    "tensorflow"
+    "tensorflow",
     "matplotlib==3.4.3",
     "numpy==1.21.2",
     "seaborn==0.11.2",
