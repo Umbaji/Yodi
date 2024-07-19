@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: Yodi-Umbaji
+Version: 1.0.0
+Summary: Yodi: Ewe to English and French translation application
+License: MIT
+Project-URL: homepage, https://example.com/Yodi
+Project-URL: repository, https://github.com/umbaji/Yodi
+License-File: LICENSE
+Requires-Dist: pathlib
+Requires-Dist: tensorflow
+Requires-Dist: matplotlib==3.4.3
+Requires-Dist: numpy==1.21.2
+Requires-Dist: seaborn==0.11.2
+Requires-Dist: IPython==7.28.0
+Requires-Dist: gradio==4.26.0
