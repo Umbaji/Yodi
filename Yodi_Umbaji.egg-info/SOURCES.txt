@@ -1,9 +1,0 @@
-LICENSE
-README.md
-pyproject.toml
-Yodi_Umbaji.egg-info/PKG-INFO
-Yodi_Umbaji.egg-info/SOURCES.txt
-Yodi_Umbaji.egg-info/dependency_links.txt
-Yodi_Umbaji.egg-info/requires.txt
-Yodi_Umbaji.egg-info/top_level.txt
-yodi/Yodi.py
