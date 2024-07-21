@@ -34,5 +34,5 @@ jobs:
           TWINE_USERNAME: ${{ secrets.PYPI_API_USERNAME }}
           TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
         run: |
-          pip install twine
-          twine upload dist/*
+          pip install twine --verbose
+          twine upload dist/* --verbose
