@@ -27,10 +27,10 @@ jobs:
           pip install build
 
       - name: Install dependencies 
-      run: |
-        sudo apt-get install git-lfs
-        cd Yodi/yodi
-        git lfs pull
+        run: |
+          sudo apt-get install git-lfs
+          cd Yodi/yodi
+          git lfs pull
 
       - name: Build the package
         run: python -m build
