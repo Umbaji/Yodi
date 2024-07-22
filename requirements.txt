@@ -1,0 +1,7 @@
+pathlib
+tensorflow
+matplotlib
+numpy
+seaborn
+IPython
+gradio
