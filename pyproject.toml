@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "yodi_umbaji"
-version = "0.0.2"
+version = "0.0.3"
 description = "Yodi: Ewe to English and French translation application"
 license = { text = "MIT" }
 
