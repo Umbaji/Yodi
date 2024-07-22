@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "yodi_umbaji"
-version = "0.0.3"
+version = "0.0.4"
 description = "Yodi: Ewe to English and French translation application"
 license = { text = "MIT" }
 
@@ -21,3 +21,6 @@ dependencies = [
 [project.urls]
 homepage = "https://example.com/Yodi"
 repository = "https://github.com/umbaji/Yodi"
+
+[project.scripts]
+yodi_umbaji = "yodi_umbaji.main:main"
