@@ -6,7 +6,7 @@ with open("README.md", "r") as f:
 
 setup(
     name="yodi_demo",
-    version="0.0.0",
+    version="0.0.1",
     packages=find_packages(),
     install_requires=[
         # Add dependencies here.
