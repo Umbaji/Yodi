@@ -6,7 +6,7 @@ with open("README.md", "r") as f:
 
 setup(
     name="yodi-umbaji",
-    version="0.5.0",
+    version="0.5.1",
     packages=find_packages(),
     install_requires=[
         'pathlib',
