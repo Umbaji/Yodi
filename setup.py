@@ -5,8 +5,8 @@ with open("README.md", "r") as f:
     description = f.read()
 
 setup(
-    name="yodis",
-    version="0.5.5",
+    name="yodi_umbaji",
+    version="0.5.6",
     packages=find_packages(),
     install_requires=[
         'pathlib',
