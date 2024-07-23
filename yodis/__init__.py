@@ -1,1 +1,1 @@
-from .Yodi import Yodi
+from .main import Yodi
