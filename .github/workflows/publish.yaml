@@ -26,11 +26,6 @@ jobs:
           pip install -r requirements.txt
           pip install build
 
-      - name: Install dependencies 
-        run: |
-          sudo apt-get install git-lfs
-          cd yodis
-          git lfs pull
 
       - name: Build the package
         run: python -m build
