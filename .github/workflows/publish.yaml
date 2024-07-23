@@ -2,10 +2,8 @@ name: Publish Python Package
 
 on:
   push:
-    branches:
-      - 'feat/package-deployment'
-    # tags:
-    #   - 'v*.*.*'
+    tags:
+     - 'v*.*.*'
 
 jobs:
   build-and-publish:

@@ -11,10 +11,10 @@ Welcome to the Yodi Model! This model is designed to perform inference on audio 
 This project requires Python 3.6 or later. To install all the necessary packages run:
 
 ```bash
-pip install -r requirements.txt
+pip install yodi-umbaji
 ```
 
-## Project Contents
+<!-- ## Project Contents
 This project contains the following files:
 - yodi.py: The main Python script where the model is defined and used for prediction.
 
@@ -68,5 +68,5 @@ If Yodi misses the prediction on your input that means that it has not enough da
 Contribute to leverage afircan language model by adding your input audio to our umini_speech dataset here :
 https://github.com/Umbaji/umni_speech
 
-## License
+## License -->
 This project is licensed under the MIT License - see the LICENSE.md file for details.
