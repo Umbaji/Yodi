@@ -4,7 +4,7 @@ This is the official repository for YodiV1, the speech recognition model for 10 
 
 ## Yodi, Your Speech Recognition Model
 
-Welcome to the Yodi Model! This model is designed to perform inference on audio files, providing a prediction of the audio command. Visit our Hugging Face page or contact contact@umbaji.org to access your model now !
+Welcome to the Yodi Model! This model is designed to perform inference on audio files, providing a prediction of the audio command. Visit our Hugging Face page or contact contact@umbaji.org to access your model now ! (Official release in September 2024)
 
 ## Requirements
 
@@ -17,6 +17,7 @@ pip install -r requirements.txt
 ## Project Contents
 This project contains the following files:
 - yodi.py: The main Python script where the model is defined and used for prediction.
+- umini_speech : The 8 words Ewè speech dataset constructed by Umbaji.
 
 ## How to Run
 Clone the repo (if installing via git): 
@@ -25,9 +26,16 @@ git clone https://github.com/Umbaji/Yodi.git
 ```
 Navigate to the cloned directory.
 
+Clone the umini_speech dataset recursively:
+
+```bash
+git clone --recursive https://github.com/Umbaji/umini_speech.git
+```
+
+
 Run the script in the terminal: 
 ```bash
-python Yodi.py
+python yodi.py
 ```
 ## Usage
 First, make sure you load your audio into the appropriate test folder.
@@ -42,28 +50,10 @@ After initializing a Yodi object, call the predict_from_path() method to get the
 
 You can also use it to train our model via the umni_speech dataset avaible on our github page :https://github.com/Umbaji/umni_speech
 
+Run the test notebook on the test_set files.
 
-Example
+If Yodi misses the prediction on your input that means that it has not enough data !!!
 
-## Example
-```python
-from pathlib import Path
-
-if __name__ =="__main__":
-    
-DATASET_PATH = '~/umini_speech/test_set/'
-data_dir = pathlib.Path(DATASET_PATH)
-
-if not data_dir.exists():
-        print("Dowload the test_set folder from the repo: https://github.com/Umbaji/Yodi.git")
-        pass
-        
-yodi_instance = Yodi(file,version = "1", local = True,plot_specs = "True")
-yodi_instance.predict_from_path()
-
-```
-
-If Yodi misses the prediction on your input that means that it has not enough data !
 
 Contribute to leverage afircan language model by adding your input audio to our umini_speech dataset here :
 https://github.com/Umbaji/umni_speech
